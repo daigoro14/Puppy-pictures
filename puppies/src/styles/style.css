@@ -1,0 +1,53 @@
+#topBar {
+    height: 80px;
+}
+
+#header {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#selectColorDiv {
+    margin-top: 21.44px;
+    right: 10px;
+    position: absolute;
+}
+
+#selectColor {
+    margin-left: 8px;
+    width: 200px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+#selectColor:hover {
+    outline: 1px solid black;
+}
+
+#selectColor:focus-visible {
+    outline: none;
+}
+
+#imagesTable {
+    margin-top: 10px;
+    display: grid;
+    --column-gutter: 24px;
+    --columns: 3;
+    grid-template-columns: repeat(var(--columns),minmax(0,1fr));
+    align-items: center;
+}
+
+.puppyImage {
+    grid-template-columns: auto;
+    border-radius: 60px;
+    --row-gutter: 24px;
+    grid-template-rows: auto;
+    display: grid;
+    align-items: start;
+    row-gap: var(--row-gutter);
+    width: 100%;
+}
+
